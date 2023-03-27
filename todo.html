@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Todo List</title>
+     <meta name="keywords" content="todo,list">
+     <meta name="description" content="Record your daily tasks.Use Free daily todo list.">
+        <link rel="stylesheet" href ="style.css">
+        <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    </head>
+    
+    <body>
+        <div class ="header">
+            <div>
+                <h5 class ="header__name"> admin </h5>
+            </div>
+            <div>
+                <button type ="button" class ="header__button header__button--logout"> Logout </button>
+            </div>
+        </div>
+         <div class ="todo-table">
+            <table class ="outer-table">
+                    <span >
+                        <tr>
+                            <th class ="outer-table__th">Todos (5)</th>
+                        </tr>
+                       
+                            <tr class ="sub-items">
+                                <td class ="outer-table__td">
+                                    <input type ="text" class ="outer-table__input" 
+                                        placeholder ="Enter todo here">
+                                    <button class ="outer-table__button outer-table__button--sub" type ="button" value ="Submit">Submit</button>
+                                </td>
+                            </tr>
+                      
+                    </span>
+                <table class ="inner-table">
+                    <tr>
+                        <td class ="inner-table__td">
+                            <input type ="checkbox" id ="walk" name ="walk" value ="walk">
+                            <label for ="walk"> walk the dog</label>
+                           
+                            <button class ="inner-table__delete inner-table__delete--button fa-regular fa-trash-can"></button>
+                            <button class ="inner-table__edit inner-table__edit--button fa-sharp fa-solid fa-pen-to-square" ></button>
+
+                            <br>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class ="inner-table__td">
+                            <input type ="checkbox" id ="passport" >
+                            <label for ="passport"> authenticate with passport-js</label>
+                            <button class ="inner-table__delete inner-table__delete--button fa-regular fa-trash-can"></button>
+                            <button class ="inner-table__edit inner-table__edit--button fa-sharp fa-solid fa-pen-to-square" ></button>
+                    <br>
+                </td> </tr>
+                <tr><td class ="inner-table__td">
+                <input type ="checkbox" id ="validate" >
+                <label for ="validate"> validate register input</label>
+                <button class ="inner-table__delete inner-table__delete--button fa-regular fa-trash-can" ></button>
+                <button class ="inner-table__edit inner-table__edit--button fa-sharp fa-solid fa-pen-to-square" ></button>
+
+                <br>
+                </td> </tr>
+                <tr><td class ="inner-table__td">
+                    <input type ="checkbox" id ="create" >
+                    <label for ="create"> create reddit website</label>
+                    <button class ="inner-table__delete inner-table__delete--button fa-regular fa-trash-can" ></button>
+                    <button class ="inner-table__edit inner-table__edit--button fa-sharp fa-solid fa-pen-to-square" ></button>
+
+                    <br>
+                    </td> </tr>
+                    <tr><td class ="inner-table__td">
+                        <input type ="checkbox" id ="store" >
+                        <label for ="store"> store sessions on mongodb</label>
+                        <button class ="inner-table__delete inner-table__delete--button fa-regular fa-trash-can"></button>
+                        <button class =" inner-table__edit inner-table__edit--button fa-sharp fa-solid fa-pen-to-square" ></button>
+
+                        <br>
+                        </td> </tr>
+                </table>
+             </td></tr>
+        </table>
+    </div>
+    
+</body>
+</html>

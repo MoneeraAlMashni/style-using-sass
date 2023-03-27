@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fbfbfb;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d0d0d0' fill-opacity='0.41'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: Bahnschrift Light;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(52, 58, 64);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__name {
+  color: white;
+  padding-left: 10px;
+}
+.header__button {
+  background-color: rgb(34, 125, 245);
+  color: white;
+  font-size: 9px;
+  border: none;
+  padding: 6px 6px;
+  margin: 7px;
+  border-radius: 2px;
+  cursor: pointer;
+  float: right;
+  border: none;
+  width: 45px;
+}
+
+.todo-table {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 300px;
+  margin-top: 60px;
+  background-color: #fbfbfb;
+  border: 1px solid rgb(203, 199, 199);
+  align-items: center;
+}
+.todo-table tr:nth-of-type(odd) {
+  background-color: rgb(242, 242, 242);
+}
+.todo-table .outer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+.todo-table .outer-table__th {
+  font-size: 13px;
+  padding: 8px;
+  border-bottom: solid 1px rgb(183, 181, 181);
+}
+.todo-table .outer-table__td {
+  padding: 10px;
+  margin: -2px;
+  font-size: 10px;
+  width: 3%;
+}
+.todo-table .outer-table__button {
+  background-color: rgb(34, 125, 245);
+  color: white;
+  font-size: 10px;
+  padding: 3px 8px;
+  position: absolute;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-top: 6px;
+  height: 21px;
+  cursor: pointer;
+  align-items: center;
+  width: 50px;
+  float: right;
+  border: none;
+}
+.todo-table .outer-table__input {
+  width: 80%;
+  border: solid 1px rgb(203, 199, 199);
+  border-right: 0px;
+  font-size: 8px;
+  height: 20px;
+  padding-left: 5px;
+  margin-top: 6px;
+}
+.todo-table .inner-table {
+  text-align: left;
+  border: solid 1px rgb(228, 228, 228);
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 1px;
+  margin-bottom: 6%;
+  border-collapse: collapse;
+  align-items: center;
+}
+.todo-table .inner-table__td {
+  padding: 10px;
+  margin: -2px;
+  font-size: 10px;
+  width: 3%;
+}
+.todo-table .inner-table__edit {
+  color: #fbfbfb;
+  align-items: center;
+  margin-left: 3px;
+  background-color: rgb(40, 167, 69);
+  border: none;
+  height: 17px;
+  width: 27px;
+  border-radius: 4px;
+  float: right;
+  cursor: pointer;
+  font-size: 11px;
+}
+.todo-table .inner-table__delete {
+  color: #fbfbfb;
+  align-items: center;
+  margin-left: 3px;
+  background-color: rgb(220, 53, 69);
+  width: 27px;
+  height: 17px;
+  border-radius: 4px;
+  float: right;
+  cursor: pointer;
+  border: none;
+  font-size: 11px;
+}/*# sourceMappingURL=style.css.map */
